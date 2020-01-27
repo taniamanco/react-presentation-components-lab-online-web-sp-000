@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class simple extends React.component {
-
-    constructor(props) {
+class DumbComponent extends Component {
+  constructor(props) {
     super(props);
 
     this.state = {
@@ -11,13 +10,13 @@ class simple extends React.component {
   }
 
   handleClick = () => {
-    let switchMood = this.state.mood === 'happy' ? 'sad' : 'happy';
-    this.setState({mood: switchMood});
+    const newMood = this.state.mood === 'happy' ? 'sad' : 'happy';
+    this.setState({ mood: newMood });
   }
 
   render() {
-    return <div onClick={this.handleClick}> {this.state.mood} </div>
+    return <div onClick={this.handleClick}>{this.state.mood}</div>;
   }
 }
 
-export default simple;
+export default DumbComponent;
