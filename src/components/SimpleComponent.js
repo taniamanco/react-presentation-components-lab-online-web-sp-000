@@ -11,7 +11,7 @@ class DumbComponent extends Component {
 
   handleClick = () => {
     const switchMood = this.state.mood === 'happy' ? 'sad' : 'happy';
-    this.setState({ mood: newMood });
+    this.setState({ mood: switchMood });
   }
 
   render() {
