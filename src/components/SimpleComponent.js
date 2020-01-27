@@ -10,7 +10,6 @@ class simple extends React.component {
     };
   }
 
-
   handleClick = () => {
     let switchMood = this.state.mood === 'happy' ? 'sad' : 'happy';
     this.setState({mood: switchMood});
