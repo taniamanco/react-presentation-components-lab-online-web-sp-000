@@ -2,9 +2,13 @@ import React from 'react';
 
 class simple extends React.component {
 
-    state = {
+    constructor(props) {
+    super(props);
+
+    this.state = {
       mood: 'happy'
     };
+  }
 
 
   handleClick = () => {
